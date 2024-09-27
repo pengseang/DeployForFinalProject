@@ -99,13 +99,13 @@ export function NavbarComponent() {
               </li>
             ))}
             <li>
-                  <a href="/ai">
+                  <Link to="/ai">
                     <img
                       className="w-10 sm:py-5 md:py-5"
                       src="http://dealkh-api.istad.co:80/images/3d5b8787-a353-4fec-a2ea-0073519d4618.png"
                       alt=""
                     />
-                  </a>
+                  </Link>
                 </li>
             {/* Mobile Login/Register Buttons */}
             {menuOpen && (
