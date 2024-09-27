@@ -15,6 +15,7 @@ import { faHeart as farHeart } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
 import AddToCart from "../products/AddToCart";
 import { faHome } from "@fortawesome/free-solid-svg-icons/faHome";
+import GeminiChat from "../../AI/applyai";
 
 export function NavbarComponent() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -97,9 +98,19 @@ export function NavbarComponent() {
                 </a>
               </li>
             ))}
+            <li>
+                  <a href="/ai">
+                    <img
+                      className="w-10 sm:py-5 md:py-5"
+                      src="http://dealkh-api.istad.co:80/images/3d5b8787-a353-4fec-a2ea-0073519d4618.png"
+                      alt=""
+                    />
+                  </a>
+                </li>
             {/* Mobile Login/Register Buttons */}
             {menuOpen && (
               <div className="flex items-center gap-3 mt-4 mb-4 lg:hidden">
+                
                 <Link to="/Login">
                   <button
                     className="flex items-center gap-2 text-white"

@@ -29,6 +29,7 @@ import Payment from "./components/products/payment";
 import GetNewProdcut from "./components/products/NewProduct";
 // import Verify from "./auth/Verify";
 import Wishlist from "./pages/Wishlist/Wishlist";
+import GeminiChat from "./AI/applyai";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -37,6 +38,9 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <App/>,
+        children:[
+          
+        ]
       },
       {
         path: "/Promotion/",
@@ -102,6 +106,10 @@ const router = createBrowserRouter([
         path:"/D50percents",
         element:<D50Percents/>
       },
+      {
+        path:"/ai",
+        element:<GeminiChat/>
+      }
     ],
   },
   {
