@@ -46,7 +46,7 @@ export function About() {
 
         {/* secton2 history*/}
         <section className="flex flex-col-reverse md:flex-row p-5 mb-12 w-[80%] m-auto">
-          <div className="flex flex-col-reverse md:flex-row items-center">
+          <div className="flex flex-col-reverse items-center md:flex-row">
             {/* Image on the left for larger screens */}
             <div
               className="p-4 mt-8 md:w-1/2 md:order-first"
@@ -105,7 +105,7 @@ export function About() {
         {/* secction Verson */}
 
         <section className="flex flex-col-reverse md:flex-row p-5 mb-12 w-[80%] m-auto">
-          <div className="flex flex-col-reverse md:flex-row items-center">
+          <div className="flex flex-col-reverse items-center md:flex-row">
             {/* Image on the left for larger screens */}
             <div
               className="p-4 mt-8 md:w-1/2 md:order-first"
@@ -149,7 +149,7 @@ export function About() {
             <div className="w-1/2 md:w-2/4 xl:w-1/3">
               <img
                 alt="CSTAD LOGO"
-                className=" "
+                className=""
                 height="700"
                 src="http://dealkh-api.istad.co:80/images/a0d7b27d-d9e3-448f-8187-2adde2f0dea5.png"
                 width="700"
@@ -282,7 +282,7 @@ export function About() {
             </div>
           </div>
         </section>
-        <section className="mb-12 text-center justify-center">
+        <section className="justify-center mb-12 text-center">
           <h2 className="mb-4 text-3xl font-bold md:text-4xl lg:text-4xl xl:text-4xl">
             Our{" "}
             <span className="text-transparent bg-gradient-to-r from-teal-400 to-blue-500 hover:bg-gradient-to-bl bg-clip-text">
@@ -290,7 +290,8 @@ export function About() {
             </span>
           </h2>
           <p>#562B, St 562, Boeung Kok, Toul Kork, Phnom Penh</p>
-          <div className="flex justify-center  mt-4">
+          <div cclassName="mb-80">
+            <div className="flex justify-center mt-4">
             <div className="relative w-[1200px] pb-[45.25%]">
               {/* 16:9 aspect ratio */}
               <iframe
@@ -303,6 +304,8 @@ export function About() {
               ></iframe>
             </div>
           </div>
+          </div>
+          
         </section>
       </main>
     </>
